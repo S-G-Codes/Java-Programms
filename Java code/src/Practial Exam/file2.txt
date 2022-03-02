@@ -1,0 +1,4 @@
+Numbers : 12
+Letters : 46
+Space : 14
+Special Characters : 1

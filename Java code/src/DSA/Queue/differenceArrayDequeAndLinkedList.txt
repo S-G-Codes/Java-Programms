@@ -1,0 +1,61 @@
+Test starts
+Using linked list takes about:256ms
+Using ArrayDeque takes about:106ms
+Test finished
+
+We can see that the ArrayDeque is more than twice as fast as LinkedList implementation. The benefit is coming from two places as far as I understand.
+
+1. ArrayDeque is backed by Array and Array is more cache-locality friendly than LinkedList (since it has to go through another indirection in order to get where next node is).
+2. ArrayDeque is memory efficient than LinkedList since it does not have to keep an additional reference to the next node.
+
+So using ArrayDeque instead of LinkedList when using it in a queue like fashion.
+
+
+
+
+CODE TO CHECK TIME USED BY ArrayDeque AND LinkedList
+
+import java.util.*;
+
+public class ListPerfTest {
+
+private static final Queue List = new LinkedList();
+
+private static final Queue Queue2 = new ArrayDeque();
+
+private static int Count = 1000000;
+
+public static void main(String ... args) {
+
+if (args.length > 1) {
+Count = Integer.parseInt(args[0]);
+}
+System.out.println("Test starts");
+long start = System.nanoTime();
+for (int i = 0; i <>
+List.offer(i + "");
+}
+for (int i = (Count >> 1); i <>
+List.peek();
+List.poll();
+}
+long end = System.nanoTime();
+System.out.println("Using linked list takes about:" + (end - start) / 1000000 + "ms");
+
+System.gc();
+
+start = System.nanoTime();
+for (int i = 0; i <>
+Queue2.offer(i + "");
+}
+for (int i = (Count >> 1); i <>
+Queue2.peek();
+Queue2.poll();
+}
+end = System.nanoTime();
+System.out.println("Using ArrayDeque takes about:" + (end - start) / 1000000 + "ms");
+System.out.println("Test finished");
+
+}
+
+}
