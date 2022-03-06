@@ -25,7 +25,7 @@ public class keypadCombination {
 
 
     public static void main(String[] args) {
-        String str = "26";
+        String str = "23";
         printCombo(str, 0, "");
 
     }
