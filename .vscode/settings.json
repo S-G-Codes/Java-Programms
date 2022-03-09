@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "Java code/src/Recursion/Interview Question",
         "Java code/src/30DaysOnHackerRank.java",
-        "Java code/src/Recursion/Interview Question"
+        "Java code/src/DSA/LinkedList"
     ]
 }

@@ -17,6 +17,22 @@ public boolean hasCycle(ListNode head) {
         
         if(hare == turtle){
             return true;
+
+
+
+            /*  
+            We can also calculate the length of cycle 
+            ListNode temp = slow;
+            int length = 0;
+
+            do{
+               temp = temp.next;
+               length++;
+            }while(slow !=temp)
+
+
+
+            */
         }
     }
     return false;

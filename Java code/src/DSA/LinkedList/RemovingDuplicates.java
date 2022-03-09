@@ -1,5 +1,16 @@
 public class RemovingDuplicates {
-
+    class ListNode {
+        int val;
+        ListNode next;
+    
+        public ListNode() {
+        }
+    
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+    }
 // Leetcode question 
 //url = https://leetcode.com/problems/remove-linked-list-elements/submissions/
 

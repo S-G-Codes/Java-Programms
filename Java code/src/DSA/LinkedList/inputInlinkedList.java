@@ -7,6 +7,7 @@ public class inputInlinkedList {
         Scanner sc = new Scanner(System.in);
 
            list.add(sc.nextInt());
+           System.out.println(list);
               
           sc.close();
 

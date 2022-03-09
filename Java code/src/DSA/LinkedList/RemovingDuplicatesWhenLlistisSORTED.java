@@ -3,7 +3,18 @@ public class RemovingDuplicatesWhenLlistisSORTED {
 //letcode question 
 //url == https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 
+class ListNode {
+    int val;
+    ListNode next;
 
+    public ListNode() {
+    }
+
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+}
 
 
 

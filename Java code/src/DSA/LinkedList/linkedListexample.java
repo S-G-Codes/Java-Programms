@@ -107,6 +107,32 @@ public int getSize(){
 
 
 
+//inserting with recursion
+
+//tc = O(n)
+//Sp = O(n)
+
+public void insertWithRec(String data , int index){
+    head = insertWithRec(data, index, head);
+}
+
+private Node insertWithRec(String data , int index , Node currNode){
+      if(index == 0){
+      Node temp  = new Node(data);
+    
+
+      size++;
+      return temp;
+
+      }
+
+
+      currNode.next = insertWithRec(data, index-1, currNode.next);
+      return currNode;
+}
+
+
+
     public static void main(String[] args) {
         linkedListexample list = new linkedListexample();
     list.addingAtFirst("a");
@@ -128,6 +154,9 @@ public int getSize(){
  
  System.out.println(list.getSize()); 
 
+
+ list.insertWithRec("listttt", 3);
+ list.printList();
 
 
     }
