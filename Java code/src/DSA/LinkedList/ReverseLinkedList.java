@@ -2,6 +2,7 @@
 
 public class ReverseLinkedList {
     Node head;
+    Node tail;
     
    
 class Node{
@@ -32,6 +33,33 @@ public  void addingAtLast(Integer data) {
 }
 
 public void reverseLinkedList(){
+
+//approch 1
+
+     //using iterative approch
+        
+    //  if(head == null) return head;
+        
+        
+    //  ListNode prev = null;
+    //          ListNode present = head;
+    //                  ListNode next = head.next;
+     
+    //  while(present !=null){ 
+  
+    //      present.next = prev;
+    //              prev = present;
+    //      present = next;
+    //      if(next !=null){
+    //          next = next.next;
+    //      }
+         
+    //  }
+    //  return prev;    //that is our new head now
+
+
+
+//approch 2
 if(head == null || head.next== null){
     return;
 }
@@ -72,6 +100,10 @@ if(head == null || head.next== null){
         if(head == null || head.next== null){
 return head;
         }
+        
+
+
+
 
         Node newHead = reverseWithRecursion(head.next);
         
@@ -82,6 +114,29 @@ return head;
 
 
     }
+
+
+
+    //we can also do this using head and tail approach
+
+
+
+        // private void reverse(Node node) {
+        //     if (node == tail) {
+        //         head = tail;
+        //         return;
+        //     }
+        //     reverse(node.next);
+        //     tail.next = node;
+        //     tail = node;
+        //     tail.next = null;
+        // }
+
+
+
+
+
+    
 
 
     public static void main(String[] args) {
@@ -100,6 +155,10 @@ list.addingAtLast(4);
 
 list.head = list.reverseWithRecursion(list.head);
 list.printList();
+
+
+
+ 
     }
 }
 

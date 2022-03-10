@@ -1,6 +1,28 @@
 
 
 public class LeetCode_Linked_List_cycle {
+
+
+    
+//leetcode class and its constructor
+    class ListNode {
+        int val;
+        ListNode next;
+    
+        public ListNode() {
+        }
+    
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+    }
+
+
+
+
+
+
     //linked list cylce II
     //url = https://leetcode.com/problems/linked-list-cycle-ii/
 //Tc  = O(n) space constant
