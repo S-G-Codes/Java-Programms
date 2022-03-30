@@ -25,28 +25,36 @@ public class RemoveNthNodeFromEnd {
 
     //apna sol
     public ListNode ApnaSolremoveNthFromEnd(ListNode head, int n) {
-        if(head.next == null){
-            return head;
-        }
+          //approch 
+        //1. find the size of list
+        //2. find the prev node of nth element
+        //3. delete that prev.next element i.e nth element
         
-         int size = 0;
-         ListNode current = head;
-         while(current!=null){
-             current = current.next;
-             size++;
-         }
-          if(n==size){
-             return head.next;
-         }
-         int indexOfsearch = size - n ;
-         ListNode prev = head;
-         int i =1;
-         while(i < indexOfsearch){
-             prev = prev.next;
-             i++;
-         }
-           prev.next = prev.next.next;
-         return head;
+        if(head.next == null) return null;
+        
+         //finding size 
+          int size = 0;
+          ListNode curr =  head;
+          while(curr != null){
+               curr = curr.next;
+              size++;
+          }
+        
+          //by this formula     (size - n +1) 
+         if(n== size) return head.next;
+        
+          //find prev of n th node
+         int prevIdxofN = size -n;
+         ListNode prevOfN = head;
+         int i = 1;
+        while(i < prevIdxofN){
+            prevOfN = prevOfN.next;
+            i++;
+            
+        }
+        //deleting the node
+            prevOfN.next = prevOfN.next.next;
+        return head;
     }
 
     public static void main(String[] args) {
