@@ -67,8 +67,8 @@ public class statercode {
             while(testCases-- > 0){
                 // use in to take input
                 //  out.println();   this to print
-
-
+                
+               
                 // Your code here
             }
             out.close();
