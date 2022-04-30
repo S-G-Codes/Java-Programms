@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class NextGreaterElement {
     // https://leetcode.com/problems/next-greater-element-iii/
@@ -89,7 +89,9 @@ public class NextGreaterElement {
       }
     
     public static void main(String[] args) {
-            int n = 12;
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter the n: ");
+            int n = sc.nextInt();
            System.out.println(nextGreaterElement(n));  
     } 
 }

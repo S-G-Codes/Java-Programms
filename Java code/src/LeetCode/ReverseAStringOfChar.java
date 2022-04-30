@@ -20,6 +20,6 @@ public class ReverseAStringOfChar {
          return s;
      }
     public static void main(String[] args) {
-        
+    
     }
 }
