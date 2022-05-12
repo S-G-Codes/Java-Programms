@@ -15,6 +15,8 @@ class Permautions{
           }
 
           permuations(numbers , 0 , ans);
+           
+
           return ans;
     }
 
@@ -46,7 +48,9 @@ class Permautions{
         
     }
 
+ 
 
+              
     public static void main(String[] args) {
         
     }
