@@ -20,6 +20,9 @@ public class UniquePaths {
 
 
 //using dp
+
+           //Approch - To reach a certain point calculate the previous ways to reaching it and add them
+
   static  public int uniquePaths(int m, int n) {
         int dp [][] = new int [m][n];
        
