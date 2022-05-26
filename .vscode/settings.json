@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
         "Java code/src/Recursion/Interview Question",
+        "Java code/src/LeetCode",
         "Java code/src/DSA/LinkedList",
         "Java code/src/30DaysOnHackerRank.java",
-        "Java code/src/LeetCode"
+        "Java code/src/Advance Java/JDBC"
     ]
 }
