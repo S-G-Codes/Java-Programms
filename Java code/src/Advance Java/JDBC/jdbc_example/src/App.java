@@ -3,7 +3,7 @@ import java.sql.*;
 public class App {
 public static void main(String[] args) throws SQLException {
     String username = "root";
-    String password = "Activa@4408";         //enter your password dumbass
+    String password = "mypassword";         //enter your password dumbass
     String query = "select * from Enginners where Last_Namme = 'Ghule';";
     String url  =  "jdbc:mysql://localhost:3306/University";
 
