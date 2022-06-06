@@ -37,7 +37,7 @@ public class Combination_of_Sum_III {
 
 
     static   public List<List<Integer>> combinationSum3(int k, int n) {
-       Set<List<Integer>>  set = new HashSet<>();
+       Set <List<Integer>>  set = new HashSet<>();
 
        backTracking(set,k , n , new HashSet<>(), 1 );
        return new ArrayList<>(set);
