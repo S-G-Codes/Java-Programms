@@ -32,8 +32,8 @@ public class LongestSubstringwithoutRepeatElem {
        
     }
     public static void main(String[] args) {
-        // String s = "pwwkew";
-        String s = "bbbbb";
+        String s = "pwwkew";
+        // String s = "bbbbb";
        System.out.println(lengthOfLongestSubstring(s));
 
      
