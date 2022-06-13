@@ -68,7 +68,7 @@ public class statercode {
                 // use in to take input
                 //  out.println();   this to print
                 
-               
+             
                 // Your code here
             }
             out.close();
