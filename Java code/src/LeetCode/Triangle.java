@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Triangle {
     // https://leetcode.com/problems/triangle/
     //go from botttom to top take the min of two add into array compare it done
