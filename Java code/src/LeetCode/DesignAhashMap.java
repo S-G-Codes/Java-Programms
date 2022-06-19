@@ -1,9 +1,11 @@
+import java.util.Arrays;
+
 public class DesignAhashMap {
     // Not so good soln
      //Tc = O(1)  //space 1000000 can be optimized using Linked list
      int[] map = null;
 
-     public MyHashMap() {
+     public void MyHashMap() {
          map = new int[1000001];
          Arrays.fill(map, -1);
      }
