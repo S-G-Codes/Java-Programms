@@ -10,8 +10,8 @@ public class Fibnonacci {
         int a = 0;
         int b = 1;
 
-        System.out.print(a + " ");
-        System.out.print(b + " ");
+        // System.out.print(a + " ");
+        // System.out.print(b + " ");
 
         for (int i = 0; i <=n-2; i++) {
                   int c = a+b;
@@ -19,5 +19,6 @@ public class Fibnonacci {
                   a = b;
                   b = c;
         }
+        
     }
 }
