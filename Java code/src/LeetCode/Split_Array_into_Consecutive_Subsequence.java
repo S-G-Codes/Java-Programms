@@ -19,6 +19,7 @@ public class Split_Array_into_Consecutive_Subsequence {
             if(avaibilityMap.get(nums[i])<=0){
                 continue;
             }else if(vacancyMap.getOrDefault(nums[i], 0)>0){
+                avaibilityMap.put(nums[i], avaibilityMap.getOrDefault(nums[i],0)-1);
 
                 vacancyMap.put(nums[i], vacancyMap.getOrDefault(nums[i],0)-1);
 				//System.out.println("Vacancy found for " +  (nums[i]+1));
