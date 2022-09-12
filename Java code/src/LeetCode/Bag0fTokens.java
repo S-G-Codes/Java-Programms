@@ -17,7 +17,7 @@ public class Bag0fTokens {
                     left++;
                     score++;
                     maxScore = Math.max(score, maxScore);
-                }else if(score > power){
+                }else if(score > 0){
                      power += tokens[right];
                      right--;
                      score--;
